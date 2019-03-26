@@ -1,4 +1,6 @@
-#GrUMPy 0.85
+# GrUMPy 0.9.0
+
+## Now with Python 3 support!
 
 [![DOI](https://zenodo.org/badge/18217673.svg)](https://zenodo.org/badge/latestdoi/18217673)
 
@@ -24,10 +26,6 @@ See below for brief documentation of usage
 To install, do:
 
 ```
-easy_install coinor.grumpy
-```
-or
-```
 pip install coinor.grumpy
 ```
 
@@ -42,7 +40,7 @@ pip install coinor.grumpy
   
   It is also possible to typeset labels in LaTex and to output the graph in LaTex format using `dot2tex` (**Warning**: recent versions of `dot2tex` have not perfectly, your mileage may vary). After installing `dot2tex`, this can be done by simply calling the method `write(basename='fileName', format='dot')`, and then doing `dot2tex --tmath fileName.dot` or by calling `set_display_mode('dot2tex')` and then `display()` as usual. At the moment, the latter only seems to work with version `2.9.0dev` available [here](https://github.com/Alwnikrotikz/dot2tex). For the former method, just using `easy_install dot2tex` should work fine.
 1. GrUMPy also creates some visualizations with [gnuplot](https://sourceforge.net/projects/gnuplot/). For tips on installing `gnuplot`, see below.
-1. GrUMPy can also visualize 2D polyhedra with the installation of [pypolyhedron](https://github.com/rdeits/pypolyhedron), which must be installed from source.
+1. GrUMPy can also visualize 2D polyhedra with the installation of [pypolyhedron](https://github.com/tkralphs/pypolyhedron), which can be install with `pip install pypolyhedron`
   
 # Additional Notes for Windows Installation
 
